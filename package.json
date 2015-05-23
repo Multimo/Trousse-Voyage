@@ -1,0 +1,11 @@
+{
+  "name": "Trousse-Voyage",
+  "version": "0.0.0",
+  "description": "custom wp-theme for trousse voyage",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
