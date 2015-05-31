@@ -25,6 +25,9 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -124,6 +127,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+	margin: 0px;
 }
 
 h2, .h2 {
@@ -157,7 +161,7 @@ HEADER STYLES
 }
 
 	#logo {
-		margin: 0.75em 0;
+		background-color: gold;
 		padding: 20px;
 
 		a {
@@ -246,6 +250,11 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.clear {
+	clear: both;
+	height: 0;
+}
 
 
 /*********************
@@ -562,6 +571,21 @@ PAGE NAVI STYLES
 		}
 
 	} /* end .wp-prev-next */
+
+	.hide {
+		display: none;
+	}
+	#menu {
+		padding: 10px 5px;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+
+	}
+		.navburger{
+		  float: right;
+		}
+
 
 /******************************************************************
 COMMENT STYLES

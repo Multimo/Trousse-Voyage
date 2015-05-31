@@ -47,18 +47,20 @@
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
-
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 
 						<!-- <img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" /> -->
 						<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+						<div class="clear"><br></div>
 
 					</h1>
 
 
 
+
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -72,6 +74,7 @@
         			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
+						
 
 					</nav>
 

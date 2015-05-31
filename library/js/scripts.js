@@ -110,7 +110,31 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  /*
+	jQuery(".nav").addClass("hide").before('<div id="menu">Menu <span class="navburger">☰</span></div>');
+
+	/*
+	* jQuery function to create animated mobile nav menu
+	*/
+
+	$("#menu").click(function(){
+		$(".nav").slideToggle(1000);
+
+  });
+
+	$(window).resize(function(){
+	  if(window.innerWidth > 768) {
+		  $(".nav").removeClass("hide");
+	  }
+  });
+
+	/*
+	* clearfix for the nav menu sub menus
+	*/
+
+	// $(".sub-menu").append('<div class="clear"><br></div>');
+
+
+	/*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
   */

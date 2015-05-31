@@ -1,11 +1,22 @@
 {
   "name": "Trousse-Voyage",
   "version": "0.0.0",
-  "description": "custom wp-theme for trousse voyage",
-  "main": "index.php",
+  "description": "A Lightweight Wordpress Development Theme",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Multimo/Trousse-Voyage.git"
+  },
   "author": "",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Multimo/Trousse-Voyage/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-sass": "~2.0.1"
+  }
 }

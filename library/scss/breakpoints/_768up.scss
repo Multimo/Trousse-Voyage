@@ -33,7 +33,9 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+		float: left;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -41,13 +43,17 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
+
 	ul {
 		background:$black;
 		margin-top:0;
+		position: relative;
 	}
 	li {
 		float: left;
 		position: relative;
+		padding: 0px 10px;
+		margin-top: 24px;
 
 		a {
 			border-bottom: 0;
@@ -58,7 +64,8 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				text-decoration: underline;
+				background-color: gold;
+				text-decoration: none;
 			}
 		}
 
@@ -69,22 +76,28 @@ NAVIGATION STYLES
 		plan your menus and drop-downs wisely.
 		*/
 		ul.sub-menu,
-		ul.children {
+		 ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
 			border-top: 0;
 			position: absolute;
 			visibility: hidden;
 			z-index: 8999;
+			margin-top: 0;
+
+
 
 			li {
+				margin-top: 0;
 
 				a {
 					padding-left: 10px;
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
+					padding-right: 0;
+
+
+
 
 					&:hover,
 					&:focus {}
@@ -98,6 +111,7 @@ NAVIGATION STYLES
 
 					a {
 						border-bottom: 0;
+						// margin-bottom: 20px;
 					}
 				}
 
@@ -136,6 +150,27 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.hide {
+	display: block;
+}
+#menu {
+	display: none;
+}
+
+// .cf {
+//   *zoom: 1;
+// }
+// .cf:before, .cf:after {
+//   content: " ";
+//   display: table;
+// }
+// .cf:after {
+//   clear: both;
+// }
+
+
+
 
 /*********************
 SIDEBARS & ASIDES
@@ -284,4 +319,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-
