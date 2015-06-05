@@ -110,16 +110,45 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-	jQuery(".nav").addClass("hide").before('<div id="menu">Menu <span class="navburger">☰</span></div>');
+	// var $sub-menu = $(".sub-menu");
+	var $menu = $("#menu");
+	var $submenu = $("ul.sub-menu").parent();
+	var $dropVoyages = $(".nav").children(".menu-item-has-children").find("span");
 
+	// adds menu div for mobile
+	 $(".nav").addClass("hide").before('<div id="menu">Menu <span class="navburger">☰</span></div>');
+	//  $(".sub-menu").addClass("hide");
+
+
+	// adds nav display arrows to all li elements with a ul child styled with dropDown
+	$(function() {
+			$(".nav").each(function(){
+				if ($("li").hasClass("menu-item-has-children")) {
+						$(".menu-item-has-children").prepend("<span class='dropDown'> > </span>")
+				};
+			});
+
+	});
 	/*
 	* jQuery function to create animated mobile nav menu
 	*/
-
+  // opens main menu
 	$("#menu").click(function(){
-		$(".nav").slideToggle(1000);
+		$(".nav").slideToggle();
 
   });
+	//opens sub menus make a function for each level of menu
+
+	$(".menu-item-has-children").on("click","span", function(){
+		var $childUl = $(this).closest(".menu-item-has-children").children(".sub-menu");
+
+		$childUl.slideToggle();
+
+	});
+	// $submenu.click(function(){
+	// 	$(this).find("ul").slideToggle();
+	// });
+
 
 	$(window).resize(function(){
 	  if(window.innerWidth > 768) {

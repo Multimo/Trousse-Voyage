@@ -74,7 +74,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -217,9 +217,9 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
-
-			li {
-
+			display: none;
+			background-color: cadetblue;
+			li { 
 				a {
 					padding-left: 30px;
 

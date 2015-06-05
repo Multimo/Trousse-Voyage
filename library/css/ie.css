@@ -207,6 +207,12 @@ NAVIGATION STYLES
 .hide {
   display: none; }
 
+.dropDown {
+  padding: 10px;
+  float: right;
+  width: 30px;
+  background-color: gold; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -256,7 +262,8 @@ GENERAL STYLES
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 760px; }
+  width: 90%;
+  margin: 0 auto; }
 
 /*********************
 HEADER STYLES
@@ -319,6 +326,14 @@ NAVIGATION STYLES
           display: block;
           width: 180px;
           padding-right: 0; }
+          .nav li ul.sub-menu li a:hover,
+          .nav li ul.sub-menu li a:focus,
+          .nav li ul.children li a:hover,
+          .nav li ul.children li a:focus {
+            display: block;
+            color: #fff;
+            background-color: gold;
+            text-decoration: none; }
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }

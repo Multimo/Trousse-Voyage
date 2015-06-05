@@ -24,7 +24,8 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 760px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 /*********************
@@ -100,7 +101,12 @@ NAVIGATION STYLES
 
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						display: block;
+						color: $white;
+						background-color: gold;
+						text-decoration: none;
+					}
 
 					&:link {}
 				}
