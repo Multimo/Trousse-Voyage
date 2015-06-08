@@ -139,10 +139,11 @@ jQuery(document).ready(function($) {
   });
 	//opens sub menus make a function for each level of menu
 
-	$(".menu-item-has-children").on("click","span", function(){
-		var $childUl = $(this).closest(".menu-item-has-children").children(".sub-menu");
+	$(".menu-item-has-children").on("click", function(e){
+		e.stopPropagation();
+		$(this).closest("li").children("ul").slideToggle();
 
-		$childUl.slideToggle();
+		// $childUl.slideToggle();
 
 	});
 	// $submenu.click(function(){

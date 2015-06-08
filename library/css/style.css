@@ -1344,7 +1344,12 @@ HEADER STYLES
   background-color: gold;
   padding: 20px; }
   #logo a {
-    color: #fff; }
+    color: #fff;
+    display: block; }
+
+.logo-image {
+  max-height: 100px;
+  max-width: 120px; }
 
 /*********************
 NAVIGATION STYLES
@@ -1826,6 +1831,11 @@ POSTS & CONTENT STYLES
       display: block;
       clear: both; }
   /* end .entry-content */
+  .wp-post-image {
+    display: none; }
+  article {
+    margin: auto;
+    width: 100%; }
   /*********************
 FOOTER STYLES
 *********************/
@@ -1947,6 +1957,19 @@ NAVIGATION STYLES
     display: block; }
   #menu {
     display: none; }
+  /*********************
+POST AND ARTICLE STYLES
+*********************/
+  article {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; }
+  .wp-post-image {
+    width: 100%;
+    z-index: -1;
+    height: 350px;
+    display: block;
+    margin-bottom: -100px; }
   /*********************
 SIDEBARS & ASIDES
 *********************/

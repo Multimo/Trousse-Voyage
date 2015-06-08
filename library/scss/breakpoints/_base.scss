@@ -166,8 +166,13 @@ HEADER STYLES
 
 		a {
 			color: $white;
+			display: block;
 		}
 	}
+.logo-image {
+	max-height: 100px;
+	max-width: 120px;
+}
 
 /*********************
 NAVIGATION STYLES
@@ -219,7 +224,7 @@ and more scalable.
 		ul.children {
 			display: none;
 			background-color: cadetblue;
-			li { 
+			li {
 				a {
 					padding-left: 30px;
 

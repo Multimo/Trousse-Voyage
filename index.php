@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
 			<div id="content">
+				<div class="image-slider wrap"
+						<?php
+					      	echo do_shortcode("[metaslider id=1952]");
+						?>
+			 </div>
+
 
 				<div id="inner-content" class="wrap cf">
 
@@ -10,20 +16,27 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+								<div class="post-img">
+									<?php if (the_post_thumbnail () ) {
+											the_post_thumbnail("large");
+									} ?>
+
+
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+
 
 								<header class="article-header">
 
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
-                                                                        
+
 									</p>
 
 								</header>
 
 								<section class="entry-content cf">
 									<?php the_excerpt(); ?>
-									<!-- the_content(); -->
+
 								</section>
 
 
@@ -46,6 +59,8 @@
 												<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
 										</footer>
 									</article>
+
+							</div>
 
 							<?php endif; ?>
 

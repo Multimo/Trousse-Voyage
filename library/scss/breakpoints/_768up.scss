@@ -174,9 +174,23 @@ NAVIGATION STYLES
 // .cf:after {
 //   clear: both;
 // }
+/*********************
+POST AND ARTICLE STYLES
+*********************/
+article {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
 
 
-
+.wp-post-image {
+	width: 100%;
+	z-index: -1;
+	height: 350px;
+	display: block;
+	margin-bottom: -100px;
+}
 
 /*********************
 SIDEBARS & ASIDES
