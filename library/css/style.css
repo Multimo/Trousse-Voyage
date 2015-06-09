@@ -1399,6 +1399,12 @@ and more scalable.
   clear: both;
   height: 0; }
 
+.dropDown {
+  padding: 10px;
+  float: right;
+  width: 50%;
+  background-color: gold; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1528,6 +1534,9 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
+#metaslider_container_1952 {
+  margin-bottom: 25px; }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1592,6 +1601,9 @@ PAGE NAVI STYLES
 
 .navburger {
   float: right; }
+
+.wp-post-image {
+  display: none; }
 
 /******************************************************************
 COMMENT STYLES
@@ -1806,11 +1818,6 @@ NAVIGATION STYLES
   /* end .menu */
   .hide {
     display: none; }
-  .dropDown {
-    padding: 10px;
-    float: right;
-    width: 30px;
-    background-color: gold; }
   /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1967,7 +1974,7 @@ POST AND ARTICLE STYLES
   .wp-post-image {
     width: 100%;
     z-index: -1;
-    height: 350px;
+    height: 300px;
     display: block;
     margin-bottom: -100px; }
   /*********************

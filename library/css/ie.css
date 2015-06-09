@@ -207,12 +207,6 @@ NAVIGATION STYLES
 .hide {
   display: none; }
 
-.dropDown {
-  padding: 10px;
-  float: right;
-  width: 30px;
-  background-color: gold; }
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -370,7 +364,7 @@ article {
 .wp-post-image {
   width: 100%;
   z-index: -1;
-  height: 350px;
+  height: 300px;
   display: block;
   margin-bottom: -100px; }
 

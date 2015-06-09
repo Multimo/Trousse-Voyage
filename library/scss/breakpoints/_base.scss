@@ -261,6 +261,16 @@ and more scalable.
 	height: 0;
 }
 
+.dropDown {
+	padding: 10px;
+	float: right;
+	width: 50%;
+	background-color: gold;
+
+}
+
+
+
 
 /*********************
 POSTS & CONTENT STYLES
@@ -503,6 +513,10 @@ POSTS & CONTENT STYLES
 		margin: 0;
 	}
 
+	#metaslider_container_1952 {
+		margin-bottom: 25px;
+	}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -591,7 +605,9 @@ PAGE NAVI STYLES
 		  float: right;
 		}
 
-
+		.wp-post-image {
+			display:none;
+		}
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
