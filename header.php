@@ -75,15 +75,12 @@
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 
-						<!-- <ul class="social-media-icons">
+						 <!-- <ul class="social-media-icons">
 							<li>FaceBook</li>
 							<li>Twitter</li>
 						</ul> -->
-
 					</nav>
 
 				</div>
 
 			</header>
-
-			

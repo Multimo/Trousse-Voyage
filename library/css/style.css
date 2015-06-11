@@ -1403,7 +1403,8 @@ and more scalable.
   padding: 10px;
   float: right;
   width: 50%;
-  background-color: gold; }
+  background-color: gold;
+  height: 100%; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1903,6 +1904,7 @@ NAVIGATION STYLES
       position: relative;
       padding: 0px 10px;
       margin-top: 24px;
+      font-size: 90%;
       /*
 		plan your menus and drop-downs wisely.
 		*/
