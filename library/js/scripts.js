@@ -124,7 +124,7 @@ jQuery(document).ready(function($) {
 	$(function() {
 			$(".nav").each(function(){
 				if ($("li").hasClass("menu-item-has-children")) {
-						$(".menu-item-has-children").prepend("<span class='dropDown'> > </span>")
+						$(".menu-item-has-children").prepend("<div class='dropDown'> ▼ </div>")
 				};
 			});
 
@@ -133,18 +133,17 @@ jQuery(document).ready(function($) {
 	* jQuery function to create animated mobile nav menu
 	*/
   // opens main menu
+
 	$("#menu").click(function(){
 		$(".nav").slideToggle();
 
   });
 	//opens sub menus make a function for each level of menu
 
+
 	$(".menu-item-has-children").on("click", function(e){
 		e.stopPropagation();
 		$(this).closest("li").children("ul").slideToggle();
-
-		// $childUl.slideToggle();
-
 	});
 	// $submenu.click(function(){
 	// 	$(this).find("ul").slideToggle();

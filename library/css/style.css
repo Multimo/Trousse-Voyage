@@ -1402,9 +1402,9 @@ and more scalable.
 .dropDown {
   padding: 10px;
   float: right;
-  width: 50%;
+  width: 35px;
   background-color: gold;
-  height: 100%; }
+  height: 48px; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1886,12 +1886,13 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
   #logo {
+    max-width: 160px;
+    max-height: 120px;
     float: left; }
   /*********************
 NAVIGATION STYLES
 *********************/
   .nav {
-    border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1902,15 +1903,15 @@ NAVIGATION STYLES
     .nav li {
       float: left;
       position: relative;
-      padding: 0px 10px;
-      margin-top: 24px;
-      font-size: 90%;
+      padding: 0, 40px, 0, 0;
+      margin-top: 35px;
       /*
 		plan your menus and drop-downs wisely.
 		*/
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
+        display: -webkit-box;
         /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
@@ -1926,36 +1927,31 @@ NAVIGATION STYLES
         position: absolute;
         visibility: hidden;
         z-index: 8999;
-        margin-top: 0;
+        float: none; }
+      .nav li li {
+        margin-top: 0px;
+        background-color: red;
         /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          margin-top: 0;
+        .nav li li .dropDown {
+          float: right;
           /*
 				if you need to go deeper, go nuts
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
+          .nav li li .dropDown a {
             padding-left: 10px;
             border-right: 0;
-            display: block;
-            width: 180px;
-            padding-right: 0; }
-            .nav li ul.sub-menu li a:hover,
-            .nav li ul.sub-menu li a:focus,
-            .nav li ul.children li a:hover,
-            .nav li ul.children li a:focus {
+            padding-right: 20px; }
+            .nav li li .dropDown a:hover,
+            .nav li li .dropDown a:focus {
               display: block;
               color: #fff;
               background-color: gold;
               text-decoration: none; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
+          .nav li li .dropDown:last-child a {
             border-bottom: 0; }
-          .nav li ul.sub-menu li ul,
-          .nav li ul.children li ul {
+          .nav li li .dropDown ul {
             top: 0;
             left: 100%; }
       .nav li:hover > ul {
@@ -1969,10 +1965,11 @@ NAVIGATION STYLES
   /*********************
 POST AND ARTICLE STYLES
 *********************/
-  article {
+  .home article {
     width: 80%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    margin-bottom: 30px; }
   .wp-post-image {
     width: 100%;
     z-index: -1;
