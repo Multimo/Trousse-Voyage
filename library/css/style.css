@@ -1351,6 +1351,9 @@ HEADER STYLES
   max-height: 100px;
   max-width: 120px; }
 
+#socialmedia760 {
+  display: none; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -1889,6 +1892,11 @@ HEADER STYLES
     max-width: 160px;
     max-height: 120px;
     float: left; }
+  #socialmedia760 {
+    float: right;
+    display: block;
+    margin-top: -100px;
+    margin-right: -20px; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -1930,30 +1938,24 @@ NAVIGATION STYLES
         float: none; }
       .nav li li {
         margin-top: 0px;
-        background-color: red;
-        /* highlight sub-menu current page */ }
-        .nav li li .dropDown {
-          float: right;
-          /*
+        min-width: 200px;
+        /*
 				if you need to go deeper, go nuts
 				just remember deeper menus suck
-				for usability. k, bai.
-				*/ }
-          .nav li li .dropDown a {
-            padding-left: 10px;
-            border-right: 0;
-            padding-right: 20px; }
-            .nav li li .dropDown a:hover,
-            .nav li li .dropDown a:focus {
-              display: block;
-              color: #fff;
-              background-color: gold;
-              text-decoration: none; }
-          .nav li li .dropDown:last-child a {
-            border-bottom: 0; }
-          .nav li li .dropDown ul {
-            top: 0;
-            left: 100%; }
+				for usability. k, bai. thrid level below
+				*/
+        /* highlight sub-menu current page */ }
+        .nav li li .dropDown {
+          float: right; }
+        .nav li li a {
+          padding-left: 10px;
+          border-right: 0;
+          padding-right: 20px; }
+        .nav li li ul.sub-menu,
+        .nav li li ul.children {
+          top: 0;
+          left: 100%;
+          background-color: cadetblue; }
       .nav li:hover > ul {
         top: auto;
         visibility: visible; }

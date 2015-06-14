@@ -31,7 +31,7 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-
+gulp
 .header {
 
 }
@@ -40,6 +40,13 @@ HEADER STYLES
 	max-height: 120px;
 	float: left;
 }
+#socialmedia760 {
+	float: right;
+	display: block;
+	margin-top: -100px;
+	margin-right: -20px;
+
+}
 
 
 /*********************
@@ -47,7 +54,6 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-
 
 	ul {
 		background:$black;
@@ -100,13 +106,13 @@ NAVIGATION STYLES
 		}li {
 
 			margin-top: 0px;
-			background-color: red;
+			min-width: 200px;
 
 
 				.dropDown{
 					float: right;
 
-				a {
+				}a {
 					padding-left: 10px;
 					border-right: 0;
 
@@ -115,38 +121,31 @@ NAVIGATION STYLES
 
 
 
-
-					&:hover,
-					&:focus {
-						display: block;
-						color: $white;
-						background-color: gold;
-						text-decoration: none;
-					}
+					//
+					// &:hover,
+					// &:focus {
+					// 	display: block;
+					// 	color: $white;
+					// 	background-color: gold;
+					// 	text-decoration: none;
+					// }
 
 					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-
-					}
 				}
 
 				/*
 				if you need to go deeper, go nuts
 				just remember deeper menus suck
-				for usability. k, bai.
+				for usability. k, bai. thrid level below
 				*/
-				ul {
+				ul.sub-menu,
+				ul.children {
 					top:0;
 					left:100%;
+					background-color: cadetblue;
+
 				}
-			}
+
 
 			/* highlight sub-menu current page */
 			li.current-menu-item,
