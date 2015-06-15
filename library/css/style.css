@@ -1899,8 +1899,11 @@ HEADER STYLES
   #socialmedia760 {
     float: right;
     display: block;
-    margin-top: -100px;
+    margin-top: -110px;
     margin-right: -20px; }
+  .social-media-icons {
+    width: 25px;
+    height: 25px; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2030,20 +2033,6 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-@media only screen and (min-width: 1030px) {
-  /******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Desktop Stylsheet
-
-This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop.
-
-******************************************************************/
-  .wrap {
-    width: 80%; } }
-
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

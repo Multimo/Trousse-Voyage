@@ -47,7 +47,6 @@
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 
 
 
@@ -78,10 +77,18 @@
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 						<ul id="socialmedia760">
-							<li>F </li>
-							<li>T </li>
-							<li>In</li>
-							
+							<li>
+								<a href="#"> <img class="social-media-icons" src="wp-content/themes/Trousse-Voyage/library/images/facebook.png" alt="Facebook"> </a>
+							</li>
+
+							<li>
+								<a href="#"> <img class="social-media-icons" src="wp-content/themes/Trousse-Voyage/library/images/twitter.png" alt="Twitter"> </a>
+							</li>
+
+							<li>
+								<a href="#"> <img class="social-media-icons" src="wp-content/themes/Trousse-Voyage/library/images/instagram.png" alt="Instagram"> </a>
+							</li>
+
 						</ul>
 
 
