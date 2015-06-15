@@ -1,11 +1,6 @@
 <?php get_header(); ?>
 
 			<div id="content">
-				<div class="image-slider wrap"
-						<?php
-					      	echo do_shortcode("[metaslider id=1952]");
-						?>
-			 </div>
 
 
 				<div id="inner-content" class="wrap cf">
@@ -13,6 +8,11 @@
 
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf index" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							<div class="image-slider"
+									<?php
+								      	echo do_shortcode("[metaslider id=1952]");
+									?>
+						 </div>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
