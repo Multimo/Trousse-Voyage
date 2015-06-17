@@ -1225,7 +1225,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1407,7 +1407,8 @@ and more scalable.
   float: right;
   width: 35px;
   background-color: gold;
-  height: 48px; }
+  height: 48px;
+  border-radius: 3px; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1892,10 +1893,13 @@ LAYOUT & GRID STYLES
   /*********************
 HEADER STYLES
 *********************/
+  .header {
+    box-shadow: 0 1px 1px; }
   #logo {
     max-width: 160px;
     max-height: 120px;
-    float: left; }
+    float: left;
+    border-radius: 2px; }
   #socialmedia760 {
     float: right;
     display: block;
@@ -1927,6 +1931,7 @@ NAVIGATION STYLES
       .nav li a {
         border-bottom: 0;
         display: -webkit-box;
+        border-radius: 3px;
         /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
@@ -1984,7 +1989,8 @@ POST AND ARTICLE STYLES
     z-index: -1;
     height: 300px;
     display: block;
-    margin-bottom: -100px; }
+    margin-bottom: -100px;
+    box-shadow: 2px 6px 3px #777; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
