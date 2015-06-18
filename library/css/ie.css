@@ -367,6 +367,8 @@ POST AND ARTICLE STYLES
   margin: 0 auto;
   position: relative;
   margin-bottom: 30px; }
+  .home article:hover {
+    opacity: .86; }
 
 .wp-post-image {
   width: 100%;
