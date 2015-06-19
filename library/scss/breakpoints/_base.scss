@@ -130,10 +130,11 @@ h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 	margin: 0px;
+
 }
 
 h2, .h2 {
-	font-size: 1.75em;
+	font-size: 1.95em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
@@ -349,7 +350,7 @@ POSTS & CONTENT STYLES
 
 			p {
 				margin: 0 0 1.5em;
-	
+
 			}
 
 
@@ -529,6 +530,15 @@ POSTS & CONTENT STYLES
 	.image-slider-wrap {
 		width: 100%;
 	}
+
+	.sticky .entry-title:before {
+  content: "\f08d";
+  float: left;
+  display: block;
+  color: #d12424;
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
 
 /******************************************************************
 PAGE NAVI STYLES

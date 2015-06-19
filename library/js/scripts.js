@@ -140,11 +140,12 @@ jQuery(document).ready(function($) {
   });
 	//opens sub menus make a function for each level of menu
 
-
-	$(".menu-item-has-children").on("click", function(e){
-		e.stopPropagation();
-		$(this).closest("li").children("ul").slideToggle();
-	});
+	if($(window).width() < 768){
+		$(".menu-item-has-children").on("click", function(e){
+			e.stopPropagation();
+			$(this).closest("li").children("ul").slideToggle();
+		});
+};
 	// $submenu.click(function(){
 	// 	$(this).find("ul").slideToggle();
 	// });

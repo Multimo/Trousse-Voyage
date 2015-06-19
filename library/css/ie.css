@@ -259,6 +259,9 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+body {
+  font-size: 16px; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -270,13 +273,15 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 .header {
-  box-shadow: 0 1px 1px; }
+  box-shadow: 0 1px 1px;
+  background-color: white; }
 
 #logo {
   max-width: 160px;
   max-height: 120px;
   float: left;
-  border-radius: 2px; }
+  border-radius: 2px;
+  background-color: inherit; }
 
 #socialmedia760 {
   float: right;
@@ -298,12 +303,15 @@ NAVIGATION STYLES
   .nav ul {
     background: #323944;
     margin-top: 0;
-    position: relative; }
+    position: relative;
+    display: block;
+    color: #323944; }
   .nav li {
     float: left;
     position: relative;
     padding: 0, 40px, 0, 0;
     margin-top: 35px;
+    font-size: 100%;
     /*
 		plan your menus and drop-downs wisely.
 		*/
@@ -312,6 +320,7 @@ NAVIGATION STYLES
       border-bottom: 0;
       display: -webkit-box;
       border-radius: 3px;
+      color: #323944;
       /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
@@ -327,7 +336,8 @@ NAVIGATION STYLES
       position: absolute;
       visibility: hidden;
       z-index: 8999;
-      float: none; }
+      float: none;
+      display: block; }
     .nav li li {
       margin-top: 0px;
       min-width: 200px;
@@ -366,16 +376,23 @@ POST AND ARTICLE STYLES
   width: 80%;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-width: 560px; }
   .home article:hover {
-    opacity: .86; }
+    transform: translate(0px, -20px); }
+  .home article p {
+    font-size: 16px;
+    color: #323944; }
+
+p {
+  font-size: 14px; }
 
 .wp-post-image {
   width: 100%;
   z-index: -1;
-  height: 300px;
+  height: 285px;
   display: block;
-  margin-bottom: -100px;
+  margin-bottom: -25px;
   box-shadow: 2px 6px 3px #777; }
 
 /*********************
@@ -386,14 +403,21 @@ SIDEBARS & ASIDES
   margin-bottom: 0.75em; }
 
 .widget {
-  padding: 0 10px;
-  margin: 2.2em 0; }
+  padding: 0 10px; }
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */ }
     .widget ul li ul {
       margin-top: 0.75em;
       padding-left: 1em; }
+
+#searchsubmit {
+  height: 40px;
+  background-color: white;
+  border: none;
+  padding: 4px;
+  border-radius: 3px;
+  margin-left: -6px; }
 
 /* links widget */
 /* meta widget */
