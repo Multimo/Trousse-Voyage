@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Super Large Monitor Stylesheet
 
@@ -9,3 +9,9 @@ on larger screens.
 
 ******************************************************************/
 
+.wp-post-image {
+  height: auto;
+  max-height: 400px;
+  max-width: 1000px;
+
+}

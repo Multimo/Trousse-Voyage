@@ -957,6 +957,7 @@ textarea,
   vertical-align: middle;
   box-shadow: none;
   border: 0;
+  background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
   input[type="text"]:focus,
@@ -1895,19 +1896,19 @@ LAYOUT & GRID STYLES
 *********************/
   .wrap {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 1240px; }
   /*********************
 HEADER STYLES
 *********************/
   .header {
-    box-shadow: 0 1px 1px;
-    background-color: white; }
+    box-shadow: 0 1px 1px; }
   #logo {
     max-width: 160px;
     max-height: 120px;
     float: left;
     border-radius: 2px;
-    background-color: inherit; }
+    background-color: gold; }
   #socialmedia760 {
     float: right;
     display: block;
@@ -1927,8 +1928,7 @@ NAVIGATION STYLES
       background: #323944;
       margin-top: 0;
       position: relative;
-      display: block;
-      color: #323944; }
+      display: block; }
     .nav li {
       float: left;
       position: relative;
@@ -1943,7 +1943,6 @@ NAVIGATION STYLES
         border-bottom: 0;
         display: -webkit-box;
         border-radius: 3px;
-        color: #323944;
         /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
@@ -2009,12 +2008,17 @@ POST AND ARTICLE STYLES
     width: 100%;
     z-index: -1;
     height: 285px;
+    max-width: 750px;
     display: block;
     margin-bottom: -25px;
     box-shadow: 2px 6px 3px #777; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
+  .sidebar {
+    background-color: ghostwhite;
+    padding: 15px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
@@ -2028,7 +2032,7 @@ SIDEBARS & ASIDES
         padding-left: 1em; }
   #searchsubmit {
     height: 40px;
-    background-color: white;
+    background-color: #eaedf2;
     border: none;
     padding: 4px;
     border-radius: 3px;
@@ -2070,6 +2074,22 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
+@media only screen and (min-width: 1240px) {
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+  .wp-post-image {
+    height: auto;
+    max-height: 400px;
+    max-width: 1000px; } }
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
