@@ -170,6 +170,7 @@ HEADER STYLES
 		a {
 			color: $white;
 			display: block;
+			max-width: 33%;
 		}
 	}
 .logo-image {
@@ -179,6 +180,32 @@ HEADER STYLES
 #socialmedia760 {
 	display: none;
 }
+
+.mobilesearch {
+	float: right;
+	max-width: 66%;
+	font-size: 16px;
+	margin-top: 20px;
+	input{
+		background: $white;
+		max-width: 100px;
+		margin-bottom: 16px;
+	}
+	button{
+		background: $white;
+		float:right;
+		border: none;
+		height: 40px;
+		position: relative;
+		right: 3px;
+		border-radius: 3px;
+		i{
+			padding: 0;
+		}
+
+	}
+}
+
 
 /*********************
 NAVIGATION STYLES
@@ -531,13 +558,32 @@ POSTS & CONTENT STYLES
 		width: 100%;
 	}
 
-	.sticky .entry-title:before {
-  content: "\f08d";
+  .entry-title:before {
+  content: "\f08d ";
   float: left;
   display: block;
   color: #d12424;
   font-family: FontAwesome;
   padding-right: 5px;
+}
+.postlogo {
+	display:none;
+}
+.postcardright {
+	margin: 0 auto;
+	width: 95%;
+
+	font-size: 16px;
+	ul li {
+		float: left;
+		padding: 10px;
+	} ul.post-categories {
+			  margin: 0;
+		}
+
+}
+.entry-category {
+	display:none;
 }
 
 /******************************************************************

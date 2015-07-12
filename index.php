@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
 			<div id="content">
 
 
@@ -8,16 +10,18 @@
 
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf index" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-					
+
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 								<div class="post-img">
 									<?php if (the_post_thumbnail () ) {
 											the_post_thumbnail("large");
 									} ?>
-
+									</div>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+
+								<div class="postcardleft">
 
 
 								<header class="article-header">
@@ -33,6 +37,18 @@
 									<?php the_excerpt(); ?>
 
 								</section>
+
+								</div>
+
+
+								<div class="postcardright">
+									<img class="postlogo" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" alt="TrousseVoyage logo" />
+									<ul>
+										<li class="entry-date"><i class="fa fa-clock-o"></i> <?php echo the_date(); ?></li>
+										<li class="entry-author">Posted by <?php echo get_the_author(); ?></li>
+										<li class="entry-category"> <?php echo the_category(); ?></li>
+									</ul>
+								</div>
 
 
 							</article>

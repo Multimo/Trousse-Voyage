@@ -55,11 +55,16 @@
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
-
+							<div class="mobilesearch">
+				        <input type="search" id="s" name="s" value="">
+				        <button type="submit" id="searchsubmit"><i class="fa fa-search fa-2x"></i></button>
+  					</div>
 
 							<a href="<?php echo home_url(); ?>" rel="nofollow">
 								<img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" />
 							</a>
+
+
 
 
 						</h1>

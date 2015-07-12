@@ -293,6 +293,9 @@ HEADER STYLES
   width: 25px;
   height: 25px; }
 
+.mobilesearch {
+  display: none; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -390,9 +393,29 @@ p {
   z-index: -1;
   height: 285px;
   max-width: 750px;
+  border: 10px solid white;
   display: block;
   margin-bottom: -25px;
   box-shadow: 2px 6px 3px #777; }
+
+.postcardleft {
+  float: left;
+  max-width: 66%;
+  border-right: 1px solid #e3e3e3; }
+
+.postcardright {
+  float: left;
+  width: 33%;
+  padding: 20px;
+  font-size: 16px; }
+  .postcardright ul li {
+    padding: 10px 0; }
+  .postcardright ul.post-categories {
+    margin: 0; }
+
+.postlogo {
+  display: block;
+  max-width: 130px; }
 
 /*********************
 SIDEBARS & ASIDES

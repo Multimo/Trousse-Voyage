@@ -1342,7 +1342,8 @@ HEADER STYLES
   padding: 20px; }
   #logo a {
     color: #fff;
-    display: block; }
+    display: block;
+    max-width: 33%; }
 
 .logo-image {
   max-height: 100px;
@@ -1350,6 +1351,26 @@ HEADER STYLES
 
 #socialmedia760 {
   display: none; }
+
+.mobilesearch {
+  float: right;
+  max-width: 66%;
+  font-size: 16px;
+  margin-top: 20px; }
+  .mobilesearch input {
+    background: #fff;
+    max-width: 100px;
+    margin-bottom: 16px; }
+  .mobilesearch button {
+    background: #fff;
+    float: right;
+    border: none;
+    height: 40px;
+    position: relative;
+    right: 3px;
+    border-radius: 3px; }
+    .mobilesearch button i {
+      padding: 0; }
 
 /*********************
 NAVIGATION STYLES
@@ -1543,13 +1564,29 @@ POSTS & CONTENT STYLES
 .image-slider-wrap {
   width: 100%; }
 
-.sticky .entry-title:before {
-  content: "\f08d";
+.entry-title:before {
+  content: "\f08d ";
   float: left;
   display: block;
   color: #d12424;
   font-family: FontAwesome;
   padding-right: 5px; }
+
+.postlogo {
+  display: none; }
+
+.postcardright {
+  margin: 0 auto;
+  width: 95%;
+  font-size: 16px; }
+  .postcardright ul li {
+    float: left;
+    padding: 10px; }
+  .postcardright ul.post-categories {
+    margin: 0; }
+
+.entry-category {
+  display: none; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1917,6 +1954,8 @@ HEADER STYLES
   .social-media-icons {
     width: 25px;
     height: 25px; }
+  .mobilesearch {
+    display: none; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2009,9 +2048,26 @@ POST AND ARTICLE STYLES
     z-index: -1;
     height: 285px;
     max-width: 750px;
+    border: 10px solid white;
     display: block;
     margin-bottom: -25px;
     box-shadow: 2px 6px 3px #777; }
+  .postcardleft {
+    float: left;
+    max-width: 66%;
+    border-right: 1px solid #e3e3e3; }
+  .postcardright {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    font-size: 16px; }
+    .postcardright ul li {
+      padding: 10px 0; }
+    .postcardright ul.post-categories {
+      margin: 0; }
+  .postlogo {
+    display: block;
+    max-width: 130px; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
