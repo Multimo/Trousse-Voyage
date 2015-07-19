@@ -34,7 +34,28 @@ style a page via class
 ********************/
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}													/* home page */
+.home {
+
+		article{ // Postcard border
+		content: '';
+		background: repeating-linear-gradient(
+			45deg,
+			$blue,
+			$blue 10px,
+			#fff 10px,
+			#fff 20px,
+			$red 20px,
+			$red 30px,
+			#fff 30px,
+			#fff 40px
+		);
+	 }
+	 div.postcardborder {
+		background-color: $white;
+		display: flex;
+		margin:5px;
+	 }
+}													/* home page */
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -197,7 +218,7 @@ HEADER STYLES
 		border: none;
 		height: 40px;
 		position: relative;
-		right: 3px;
+		left: 3px;
 		border-radius: 3px;
 		i{
 			padding: 0;
@@ -218,6 +239,23 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+
+.socialmediaMob {
+	background-color: white;
+	width: 100%;
+
+	a{
+		display: inline-block;
+		width: 30%;
+	  text-align: center;
+	  font-size: 21px;
+	i {
+		color: $blue;
+	}
+	}
+
+
+}
 
 .nav {
 	border-bottom: 0;
@@ -257,6 +295,7 @@ and more scalable.
 		ul.children {
 			display: none;
 			background-color: cadetblue;
+			border-radius: 5px;
 			li {
 				a {
 					padding-left: 30px;
@@ -311,6 +350,9 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+
+
 
 #content {
 	margin-top: 1.5em;
@@ -567,11 +609,18 @@ POSTS & CONTENT STYLES
   padding-right: 5px;
 }
 .postlogo {
-	display:none;
+	width: 100%;
+	padding: 5px;
+}
+.postcardleft {
+	float: left;
+	max-width:66%;
+	border-right: 1px solid #e3e3e3;
 }
 .postcardright {
 	margin: 0 auto;
 	width: 95%;
+
 
 	font-size: 16px;
 	ul li {
@@ -584,6 +633,9 @@ POSTS & CONTENT STYLES
 }
 .entry-category {
 	display:none;
+}
+.excerpt-read-more {
+	display: none;
 }
 
 /******************************************************************

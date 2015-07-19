@@ -19,7 +19,10 @@
 									} ?>
 									</div>
 
+
+
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+								<div class="postcardborder">
 
 								<div class="postcardleft">
 
@@ -35,6 +38,7 @@
 
 								<section class="entry-content cf">
 									<?php the_excerpt(); ?>
+									<a class="readmore" href="<?php the_permalink() ?>">... Read more?</a>
 
 								</section>
 
@@ -50,7 +54,7 @@
 									</ul>
 								</div>
 
-
+</div>
 							</article>
 
 							<?php endwhile; ?>

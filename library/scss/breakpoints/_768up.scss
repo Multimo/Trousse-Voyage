@@ -44,7 +44,7 @@ HEADER STYLES
 	max-height: 120px;
 	float: left;
 	border-radius: 2px;
-	background-color: gold;
+
 }
 #socialmedia760 {
 	float: right;
@@ -66,7 +66,9 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-
+.socialmediaMob {
+	display: none;
+}
 .nav {
 
 
@@ -164,10 +166,11 @@ NAVIGATION STYLES
 				for usability. k, bai. thrid level below
 				*/
 				ul.sub-menu,
-				ul.children {
+				 {
 					top:0;
 					left:100%;
-					background-color: cadetblue;
+					background-color: $blue;
+					border-radius: 5px;
 
 				}
 
@@ -251,6 +254,7 @@ p {
 	border-right: 1px solid #e3e3e3;
 }
 .postcardright {
+	display: block;
 	float: left;
 	width:33%;
 	padding: 20px;

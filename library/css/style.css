@@ -994,8 +994,7 @@ textarea,
   textarea:active,
   .field:focus,
   .field:active {
-    background-color: #f7f8fa;
-    outline: none; }
+    background-color: #f7f8fa; }
   input[type="text"].error,
   input[type="text"].is-invalid,
   input[type="password"].error,
@@ -1235,6 +1234,15 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
+.home article {
+  content: '';
+  background: repeating-linear-gradient(45deg, #2980b9, #2980b9 10px, #fff 10px, #fff 20px, #bf2010 20px, #bf2010 30px, #fff 30px, #fff 40px); }
+
+.home div.postcardborder {
+  background-color: #fff;
+  display: flex;
+  margin: 5px; }
+
 /* home page */
 /* blog template page */
 /* archive page */
@@ -1367,7 +1375,7 @@ HEADER STYLES
     border: none;
     height: 40px;
     position: relative;
-    right: 3px;
+    left: 3px;
     border-radius: 3px; }
     .mobilesearch button i {
       padding: 0; }
@@ -1382,6 +1390,17 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+.socialmediaMob {
+  background-color: white;
+  width: 100%; }
+  .socialmediaMob a {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-size: 21px; }
+    .socialmediaMob a i {
+      color: #2980b9; }
+
 .nav {
   border-bottom: 0;
   margin: 0;
@@ -1410,7 +1429,8 @@ and more scalable.
     .nav li ul.sub-menu,
     .nav li ul.children {
       display: none;
-      background-color: cadetblue; }
+      background-color: cadetblue;
+      border-radius: 5px; }
       .nav li ul.sub-menu li a,
       .nav li ul.children li a {
         padding-left: 30px; }
@@ -1573,7 +1593,13 @@ POSTS & CONTENT STYLES
   padding-right: 5px; }
 
 .postlogo {
-  display: none; }
+  width: 100%;
+  padding: 5px; }
+
+.postcardleft {
+  float: left;
+  max-width: 66%;
+  border-right: 1px solid #e3e3e3; }
 
 .postcardright {
   margin: 0 auto;
@@ -1586,6 +1612,9 @@ POSTS & CONTENT STYLES
     margin: 0; }
 
 .entry-category {
+  display: none; }
+
+.excerpt-read-more {
   display: none; }
 
 /******************************************************************
@@ -1944,8 +1973,7 @@ HEADER STYLES
     max-width: 160px;
     max-height: 120px;
     float: left;
-    border-radius: 2px;
-    background-color: gold; }
+    border-radius: 2px; }
   #socialmedia760 {
     float: right;
     display: block;
@@ -1959,6 +1987,8 @@ HEADER STYLES
   /*********************
 NAVIGATION STYLES
 *********************/
+  .socialmediaMob {
+    display: none; }
   .nav {
     /* end .menu ul li */
     /* highlight current page */
@@ -2014,11 +2044,11 @@ NAVIGATION STYLES
           padding-left: 10px;
           border-right: 0;
           padding-right: 20px; }
-        .nav li li ul.sub-menu,
-        .nav li li ul.children {
+        .nav li li ul.sub-menu {
           top: 0;
           left: 100%;
-          background-color: cadetblue; }
+          background-color: #2980b9;
+          border-radius: 5px; }
       .nav li:hover > ul {
         top: auto;
         visibility: visible; }
@@ -2057,6 +2087,7 @@ POST AND ARTICLE STYLES
     max-width: 66%;
     border-right: 1px solid #e3e3e3; }
   .postcardright {
+    display: block;
     float: left;
     width: 33%;
     padding: 20px;
