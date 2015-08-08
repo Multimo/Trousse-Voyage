@@ -203,13 +203,12 @@ HEADER STYLES
 }
 
 .mobilesearch {
-	float: right;
-	max-width: 66%;
+
 	font-size: 16px;
-	margin-top: 20px;
+
 	input{
 		background: $white;
-		max-width: 100px;
+	
 		margin-bottom: 16px;
 	}
 	button{
@@ -225,6 +224,10 @@ HEADER STYLES
 		}
 
 	}
+}
+
+.heroimg {
+	display: none;
 }
 
 
@@ -362,7 +365,8 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -613,13 +617,14 @@ POSTS & CONTENT STYLES
 	padding: 5px;
 }
 .postcardleft {
-	float: left;
-	max-width:66%;
-	border-right: 1px solid #e3e3e3;
+
+	max-width:100%;
+
 }
 .postcardright {
 	margin: 0 auto;
 	width: 95%;
+	display: none;
 
 
 	font-size: 16px;
