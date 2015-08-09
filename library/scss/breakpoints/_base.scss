@@ -36,25 +36,25 @@ style a page via class
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
 .home {
 
-		article{ // Postcard border
-		content: '';
-		background: repeating-linear-gradient(
-			45deg,
-			$blue,
-			$blue 10px,
-			#fff 10px,
-			#fff 20px,
-			$red 20px,
-			$red 30px,
-			#fff 30px,
-			#fff 40px
-		);
-	 }
-	 div.postcardborder {
-		background-color: $white;
-		display: flex;
-		margin:5px;
-	 }
+	// 	article{ // Postcard border
+	// 	content: '';
+	// 	background: repeating-linear-gradient(
+	// 		45deg,
+	// 		$blue,
+	// 		$blue 10px,
+	// 		#fff 10px,
+	// 		#fff 20px,
+	// 		$red 20px,
+	// 		$red 30px,
+	// 		#fff 30px,
+	// 		#fff 40px
+	// 	);
+	//  }
+	//  div.postcardborder {
+	// 	background-color: $white;
+	// 	display: flex;
+	// 	margin:5px;
+	//  }
 }													/* home page */
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
@@ -185,8 +185,8 @@ HEADER STYLES
 }
 
 	#logo {
-		background-color: gold;
-		padding: 20px;
+    background-color: $white;
+		padding: 20px 60px;
 
 		a {
 			color: $white;
@@ -196,19 +196,22 @@ HEADER STYLES
 	}
 .logo-image {
 	max-height: 100px;
-	max-width: 120px;
+	max-width: 156px;
+	position: relative;
+	left: 50%;
 }
 #socialmedia760 {
 	display: none;
 }
 
 .mobilesearch {
-
+  max-width: 300px;
 	font-size: 16px;
 
 	input{
 		background: $white;
-	
+		  border: 1px solid rgba(41, 128, 185, 0.5);
+
 		margin-bottom: 16px;
 	}
 	button{
@@ -219,6 +222,7 @@ HEADER STYLES
 		position: relative;
 		left: 3px;
 		border-radius: 3px;
+
 		i{
 			padding: 0;
 		}
@@ -734,6 +738,13 @@ PAGE NAVI STYLES
 		.wp-post-image {
 			display:none;
 		}
+
+.readmore {
+	position: relative;
+	left: 80%;
+	bottom:15px;
+	a {text-decoration: none;}
+}
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
@@ -926,6 +937,7 @@ COMMENT STYLES
 
 
 
+
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
@@ -994,7 +1006,9 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	  padding: 0px 30%;
+}
 
 	.widgettitle {}
 
@@ -1027,6 +1041,9 @@ SIDEBARS & ASIDES
 		border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
+.widget_search{
+		width: 300px;
+	} form div input {background-color: $white}
 
 /*********************
 FOOTER STYLES

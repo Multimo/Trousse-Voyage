@@ -38,7 +38,7 @@
 
 								<section class="entry-content cf">
 									<?php the_excerpt(); ?>
-									<a class="readmore" href="<?php the_permalink() ?>">... Read more?</a>
+									<span class="readmore"><a  href="<?php the_permalink() ?>">plus <i class="fa fa-paper-plane"></i></a></span>
 
 								</section>
 

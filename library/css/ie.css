@@ -302,7 +302,8 @@ HEADER STYLES
 .heroimg {
   height: auto;
   width: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 .skybanner {
   width: 100%; }

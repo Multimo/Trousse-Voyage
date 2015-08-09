@@ -1234,15 +1234,6 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
-.home article {
-  content: '';
-  background: repeating-linear-gradient(45deg, #2980b9, #2980b9 10px, #fff 10px, #fff 20px, #bf2010 20px, #bf2010 30px, #fff 30px, #fff 40px); }
-
-.home div.postcardborder {
-  background-color: #fff;
-  display: flex;
-  margin: 5px; }
-
 /* home page */
 /* blog template page */
 /* archive page */
@@ -1346,8 +1337,8 @@ HEADER STYLES
   background-color: #323944; }
 
 #logo {
-  background-color: gold;
-  padding: 20px; }
+  background-color: #fff;
+  padding: 20px 60px; }
   #logo a {
     color: #fff;
     display: block;
@@ -1355,15 +1346,19 @@ HEADER STYLES
 
 .logo-image {
   max-height: 100px;
-  max-width: 120px; }
+  max-width: 156px;
+  position: relative;
+  left: 50%; }
 
 #socialmedia760 {
   display: none; }
 
 .mobilesearch {
+  max-width: 300px;
   font-size: 16px; }
   .mobilesearch input {
     background: #fff;
+    border: 1px solid rgba(41, 128, 185, 0.5);
     margin-bottom: 16px; }
   .mobilesearch button {
     background: #fff;
@@ -1683,6 +1678,13 @@ PAGE NAVI STYLES
 .wp-post-image {
   display: none; }
 
+.readmore {
+  position: relative;
+  left: 80%;
+  bottom: 15px; }
+  .readmore a {
+    text-decoration: none; }
+
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
@@ -1816,6 +1818,9 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.sidebar {
+  padding: 0px 30%; }
+
 .widget ul li {
   /* deep nesting */ }
 
@@ -1826,6 +1831,12 @@ SIDEBARS & ASIDES
   border: 1px solid #ccc;
   border-radius: 2px;
   margin-bottom: 1.5em; }
+
+.widget_search {
+  width: 300px; }
+
+form div input {
+  background-color: #fff; }
 
 /*********************
 FOOTER STYLES
@@ -1989,7 +2000,8 @@ HEADER STYLES
   .heroimg {
     height: auto;
     width: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    display: block; }
   .skybanner {
     width: 100%; }
   /*********************
