@@ -37,6 +37,9 @@ HEADER STYLES
 
 .header {
 	box-shadow: 0 1px 1px;
+	position: fixed;
+  width: 100%;
+  z-index: 9999;
 
 }
 #logo {
@@ -49,11 +52,18 @@ HEADER STYLES
 #socialmedia760 {
 	float: right;
 	display: block;
-	margin-top: -110px;
-	margin-right: -20px;
+	margin: -37px 0 0;
+
+
   li {
 		display: inline;
-		padding: 20px;
+    padding: 5px;
+		a {
+			color:white;
+		}
+		a:hover {
+			color: $accent;
+		}
 	}
 }
 .social-media-icons {
@@ -65,8 +75,7 @@ HEADER STYLES
   display: none;
 }
 .heroimg {
-	// background: url("../images/skyheaderlogo.jpg") no-repeat;
-	// background-size:contain;
+
 	height:auto;
 	width: auto;
 	max-width: 100%;
@@ -74,6 +83,7 @@ HEADER STYLES
 }
 .skybanner {
 	width: 100%;
+	margin-top:35px;
 }
 
 
@@ -119,7 +129,7 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				background-color: gold;
+				background-color: $accent;
 				text-decoration: none;
 			}
 		}
@@ -167,7 +177,7 @@ NAVIGATION STYLES
 					// &:focus {
 					// 	display: block;
 					// 	color: $white;
-					// 	background-color: gold;
+					// 	background-color: $accent;
 					// 	text-decoration: none;
 					// }
 
@@ -183,7 +193,7 @@ NAVIGATION STYLES
 				 {
 					top:0;
 					left:100%;
-					background-color: $blue;
+					background-color: $uldropdowns;
 					border-radius: 5px;
 
 				}

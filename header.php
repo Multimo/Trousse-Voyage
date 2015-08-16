@@ -66,13 +66,9 @@
 					<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 
 						<a href="<?php echo home_url(); ?>" rel="nofollow">
-							<img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" /> 
+							<img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" />
 
-						</a>
-						<div class="mobilesearch">
-							<input type="search" id="s" name="s" value="">
-							<button type="submit" id="searchsubmit"><i class="fa fa-search fa-2x"></i></button>
-						</div>
+
 
 
 
@@ -80,6 +76,14 @@
 
 
 					</h1>
+					</a>
+					<div class="mobilesearchcontainer">
+						<div class="mobilesearch">
+							<input type="search" id="s" name="s" value="">
+							<button type="submit" id="searchsubmit"><i class="fa fa-search fa-2x"></i></button>
+						</div>
+
+					</div>
 
 					<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
@@ -94,23 +98,21 @@
         			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
-						<ul id="socialmedia760">
-							<li>
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
-						</li>
-
-							<li>
-							<a href="#"><i class="fa fa-twitter-square"></i></a>
-						</li>
-
-							<li>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							</li>
-
-						</ul>
-
-
 				</nav>
+				<ul id="socialmedia760">
+					<li>
+					<a href="#"><i class="fa fa-facebook-square"></i></a>
+				</li>
+
+					<li>
+					<a href="#"><i class="fa fa-twitter-square"></i></a>
+				</li>
+
+					<li>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					</li>
+
+				</ul>
 			</div>
 
 			</header>

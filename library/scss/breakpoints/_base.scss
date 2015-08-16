@@ -36,25 +36,25 @@ style a page via class
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
 .home {
 
-	// 	article{ // Postcard border
-	// 	content: '';
-	// 	background: repeating-linear-gradient(
-	// 		45deg,
-	// 		$blue,
-	// 		$blue 10px,
-	// 		#fff 10px,
-	// 		#fff 20px,
-	// 		$red 20px,
-	// 		$red 30px,
-	// 		#fff 30px,
-	// 		#fff 40px
-	// 	);
-	//  }
-	//  div.postcardborder {
-	// 	background-color: $white;
-	// 	display: flex;
-	// 	margin:5px;
-	//  }
+	 	article{  //Postcard border
+		content: '';
+		background: repeating-linear-gradient(
+			45deg,
+			$blue,
+			$blue 10px,
+			#fff 10px,
+			#fff 20px,
+			$red 20px,
+			$red 30px,
+			#fff 30px,
+			#fff 40px
+		);
+	 }
+	 div.postcardborder {
+		background-color: $white;
+		display: flex;
+		margin:5px;
+	 }
 }													/* home page */
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
@@ -186,28 +186,32 @@ HEADER STYLES
 
 	#logo {
     background-color: $white;
-		padding: 20px 60px;
+		padding: 20px 0px;
 
 		a {
 			color: $white;
-			display: block;
-			max-width: 33%;
+
 		}
 	}
 .logo-image {
-	max-height: 100px;
-	max-width: 156px;
+
+	max-width: 300px;
 	position: relative;
-	left: 50%;
+	margin: auto;
+	display: block;
 }
 #socialmedia760 {
 	display: none;
+}
+.mobilesearchcontainer {
+	width: 100%;
+	background: white;
 }
 
 .mobilesearch {
   max-width: 300px;
 	font-size: 16px;
-
+  margin: auto;
 	input{
 		background: $white;
 		  border: 1px solid rgba(41, 128, 185, 0.5);
@@ -301,7 +305,7 @@ and more scalable.
 		ul.sub-menu,
 		ul.children {
 			display: none;
-			background-color: cadetblue;
+			background-color: $uldropdowns;
 			border-radius: 5px;
 			li {
 				a {
@@ -344,9 +348,10 @@ and more scalable.
 	padding: 10px;
 	float: right;
 	width: 35px;
-	background-color: gold;
+	background-color: $accent;
 	height: 48px;
 	border-radius: 3px;
+	color: white;
 
 }
 
