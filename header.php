@@ -66,7 +66,7 @@
 					<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 
 						<a href="<?php echo home_url(); ?>" rel="nofollow">
-							<img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" />
+							<img class="logo-image" src="http://192.168.0.137/wordpress//wp-content/uploads/2015/05/trousse1.png" />
 
 
 
@@ -121,7 +121,9 @@
 			<div class="heroimg">
 
 			<a href="<?php echo home_url(); ?>" rel="nofollow">
+
 				<!-- <img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" /> -->
-			<img src="wp-content/themes/Trousse-Voyage/library/images/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" />
+					<!-- <img class="nohomepagebanner" src="../../wp-content/themes/Trousse-Voyage/library/images/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" /> -->
+			<img src="http://192.168.0.137/wordpress//wp-content/uploads/2015/08/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" />
 			</a>
 </div>
