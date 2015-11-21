@@ -46,7 +46,7 @@
 
 
 								<div class="postcardright">
-									<img class="postlogo" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" alt="TrousseVoyage logo" />
+									<img class="postlogo" src="<?php echo get_template_directory_uri(); ?>/library/images/trousse1.png" alt="TrousseVoyage logo" />
 									<ul>
 										<li class="entry-date"><i class="fa fa-clock-o"></i> <?php echo the_date(); ?></li>
 										<li class="entry-author">Posted by <?php echo get_the_author(); ?></li>

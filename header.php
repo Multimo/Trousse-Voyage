@@ -66,7 +66,7 @@
 					<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 
 						<a href="<?php echo home_url(); ?>" rel="nofollow">
-							<img class="logo-image" src="http://192.168.0.137/wordpress//wp-content/uploads/2015/05/trousse1.png" />
+							<img class="logo-image" src="<?php echo get_template_directory_uri(); ?>/library/images/trousse1.png" />
 
 
 
@@ -79,8 +79,9 @@
 					</a>
 					<div class="mobilesearchcontainer">
 						<div class="mobilesearch">
-							<input type="search" id="s" name="s" value="">
-							<button type="submit" id="searchsubmit"><i class="fa fa-search fa-2x"></i></button>
+						<?php get_search_form(); ?>
+						<!--	<input type="search" id="s" name="s" value="">-->
+						<!--	<button type="submit" id="searchsubmit"><i class="fa fa-search fa-2x"></i></button>-->
 						</div>
 
 					</div>
@@ -101,19 +102,19 @@
 				</nav>
 				<ul id="socialmedia760">
 					<li>
-					<a href="#"><i class="fa fa-facebook-square"></i></a>
+					<a href="https://www.facebook.com/troussevoyages"><i class="fa fa-facebook-square"></i></a>
 				</li>
 
 					<li>
-					<a href="#"><i class="fa fa-twitter-square"></i></a>
+					<a href="https://twitter.com/troussevoyages"><i class="fa fa-twitter-square"></i></a>
 				</li>
 
 					<li>
-					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="https://instagram.com/troussevoyages"><i class="fa fa-instagram"></i></a>
 					</li>
 
 				</ul>
-			</div>
+			<!-- </div> -->
 
 			</header>
 
@@ -124,6 +125,6 @@
 
 				<!-- <img class="logo-image" src="http://localhost/wordpress/wp-content/uploads/2015/05/trousse1.png" /> -->
 					<!-- <img class="nohomepagebanner" src="../../wp-content/themes/Trousse-Voyage/library/images/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" /> -->
-			<img src="http://192.168.0.137/wordpress//wp-content/uploads/2015/08/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" />
+			<img src="<?php echo get_template_directory_uri(); ?>/library/images/skyheaderlogo.jpg" alt="blue sky banner" class="skybanner" />
 			</a>
 </div>

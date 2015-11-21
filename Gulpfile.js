@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var compass = require('gulp-compass');
+var minifyCss = require('gulp-minify-css');
 
 gulp.task('sass', function () {
   gulp.src('./library/scss/**/*.scss')
@@ -21,4 +22,12 @@ gulp.task('sass:watch', function () {
   gulp.watch('./library/scss/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'sass:watch']);
+ 
+gulp.task('minify-css', function() {
+  return gulp.src('styles/*.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['sass', 'sass:watch', 'minify-css']);
+

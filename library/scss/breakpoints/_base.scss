@@ -20,7 +20,9 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	
+
+	background: $background-pattern;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -107,6 +109,7 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	text-decoration: blink;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -229,6 +232,7 @@ HEADER STYLES
 
 		i{
 			padding: 0;
+			color: $navigation;
 		}
 
 	}
@@ -276,7 +280,7 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $text-color;
+			color: #F8F8FF;
 			text-decoration: none;
 			padding: 0.75em;
 
@@ -305,14 +309,17 @@ and more scalable.
 		ul.sub-menu,
 		ul.children {
 			display: none;
-			background-color: $uldropdowns;
+			background-color: #F8F8FF;
 			border-radius: 5px;
 			li {
 				a {
 					padding-left: 30px;
+					color:$text-color;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						color: #F8F8FF;
+					}
 
 					&:link {}
 
@@ -321,7 +328,9 @@ and more scalable.
 				&:first-child {}
 
 				&:last-child {}
-
+        ul {
+					background-color: $uldropdowns;
+				}
 			}
 
 		}
@@ -337,7 +346,9 @@ and more scalable.
 
 	}  /* end current highlighters */
 
-} /* end .nav */
+}
+
+ /* end .nav */
 
 .clear {
 	clear: both;
@@ -368,6 +379,7 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 1.5em;
+	background: $background-pattern; 
 }
 
 		.hentry {
@@ -376,6 +388,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: 1.5em;
 
 			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -405,7 +418,10 @@ POSTS & CONTENT STYLES
 
 		.entry-title {}
 
-		.archive-title {}
+		.archive-title { 
+			text-align: center;
+			margin: 10px;
+		}
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
@@ -1015,7 +1031,7 @@ SIDEBARS & ASIDES
 	  padding: 0px 30%;
 }
 
-	.widgettitle {}
+	.widgettitle { color: white;}
 
 	.widget {
 
@@ -1058,6 +1074,12 @@ FOOTER STYLES
 	clear: both;
 	background-color: $black;
 	color: $light-gray;
+}
+
+
+
+#sidebar1 {
+	display: none;
 }
 
 	/*

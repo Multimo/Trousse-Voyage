@@ -539,7 +539,9 @@ probably best not to use it. I mean, were you going to anyway? */
     /* 2 */ }
   body#tinymce.wp-editor table {
     border-collapse: collapse;
-    border-spacing: 0; }
+    border-spacing: 0;
+    width: 100%;
+    color: #fff; }
   body#tinymce.wp-editor * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

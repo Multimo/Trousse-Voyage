@@ -407,7 +407,9 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  width: 100%;
+  color: #fff; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1190,7 +1192,8 @@ input[type="password"] {
 textarea {
   max-width: 100%;
   min-height: 120px;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  padding: 5px; }
 
 select {
   -webkit-appearance: none;
@@ -1225,7 +1228,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background-color: #eaedf2;
+  background: url("../images/pw_maze_white.png") repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1289,6 +1292,7 @@ LINK STYLES
 *********************/
 a, a:visited {
   color: #f01d4f;
+  text-decoration: blink;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -1381,7 +1385,8 @@ HEADER STYLES
     left: 3px;
     border-radius: 3px; }
     .mobilesearch button i {
-      padding: 0; }
+      padding: 0;
+      color: #323944; }
 
 .heroimg {
   display: none; }
@@ -1423,7 +1428,7 @@ and more scalable.
 		*/ }
     .nav li a {
       display: block;
-      color: #fff;
+      color: #F8F8FF;
       text-decoration: none;
       padding: 0.75em;
       /*
@@ -1435,11 +1440,20 @@ and more scalable.
     .nav li ul.sub-menu,
     .nav li ul.children {
       display: none;
-      background-color: #BACBDB;
+      background-color: #F8F8FF;
       border-radius: 5px; }
       .nav li ul.sub-menu li a,
       .nav li ul.children li a {
-        padding-left: 30px; }
+        padding-left: 30px;
+        color: #5c6b80; }
+        .nav li ul.sub-menu li a:hover,
+        .nav li ul.sub-menu li a:focus,
+        .nav li ul.children li a:hover,
+        .nav li ul.children li a:focus {
+          color: #F8F8FF; }
+      .nav li ul.sub-menu li ul,
+      .nav li ul.children li ul {
+        background-color: #BACBDB; }
 
 /* end .nav */
 .clear {
@@ -1459,7 +1473,8 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  background: url("../images/pw_maze_white.png") repeat; }
 
 .hentry {
   background-color: #fff;
@@ -1480,6 +1495,10 @@ POSTS & CONTENT STYLES
 .page-title,
 .entry-title {
   margin: 0; }
+
+.archive-title {
+  text-align: center;
+  margin: 10px; }
 
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -1659,7 +1678,7 @@ PAGE NAVI STYLES
     color: #2980b9; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #2980b9;
-      color: #fff; }
+      color: #3e3e3e; }
   .pagination .current {
     cursor: default;
     color: #5c6b80; }
@@ -1834,6 +1853,9 @@ SIDEBARS & ASIDES
 .sidebar {
   padding: 0px 30%; }
 
+.widgettitle {
+  color: white; }
+
 .widget ul li {
   /* deep nesting */ }
 
@@ -1858,6 +1880,9 @@ FOOTER STYLES
   clear: both;
   background-color: #323944;
   color: #f8f9fa; }
+
+#sidebar1 {
+  display: none; }
 
 /*
 	if you checked out the link above:
@@ -2107,7 +2132,8 @@ POST AND ARTICLE STYLES
     max-width: 560px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
     .home article:hover {
-      transform: translate(0px, -20px); }
+      transform: translate(0px, -20px) scale(1.09);
+      transition: all 0.5s; }
     .home article p {
       font-size: 16px;
       color: #323944; }
@@ -2117,10 +2143,10 @@ POST AND ARTICLE STYLES
     width: auto;
     height: auto;
     max-width: 100%;
+    margin: 0 auto;
     z-index: -1;
     border: 10px solid white;
     display: block;
-    margin-bottom: -25px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
   .postcardleft {
     float: left;
@@ -2142,12 +2168,14 @@ POST AND ARTICLE STYLES
   /*********************
 SIDEBARS & ASIDES
 *********************/
+  #sidebar1 {
+    display: block; }
   .sidebar {
-    background-color: ghostwhite;
+    background-color: #323944;
     padding: 15px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
   .widgettitle {
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #fff;
     margin-bottom: 0.75em; }
   .widget {
     padding: 0 10px; }
@@ -2159,11 +2187,10 @@ SIDEBARS & ASIDES
         padding-left: 1em; }
   #searchsubmit {
     height: 40px;
-    background-color: #eaedf2;
+    background-color: #fff;
     border: none;
     padding: 4px;
-    border-radius: 3px;
-    margin-left: -6px; }
+    border-radius: 3px; }
   /* links widget */
   /* meta widget */
   /* pages widget */

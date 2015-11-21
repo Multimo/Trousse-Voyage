@@ -402,7 +402,8 @@ POST AND ARTICLE STYLES
   max-width: 560px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
   .home article:hover {
-    transform: translate(0px, -20px); }
+    transform: translate(0px, -20px) scale(1.09);
+    transition: all 0.5s; }
   .home article p {
     font-size: 16px;
     color: #323944; }
@@ -414,10 +415,10 @@ p {
   width: auto;
   height: auto;
   max-width: 100%;
+  margin: 0 auto;
   z-index: -1;
   border: 10px solid white;
   display: block;
-  margin-bottom: -25px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
 
 .postcardleft {
@@ -443,13 +444,16 @@ p {
 /*********************
 SIDEBARS & ASIDES
 *********************/
+#sidebar1 {
+  display: block; }
+
 .sidebar {
-  background-color: ghostwhite;
+  background-color: #323944;
   padding: 15px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
 
 .widgettitle {
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid #fff;
   margin-bottom: 0.75em; }
 
 .widget {
@@ -463,11 +467,10 @@ SIDEBARS & ASIDES
 
 #searchsubmit {
   height: 40px;
-  background-color: #eaedf2;
+  background-color: #fff;
   border: none;
   padding: 4px;
-  border-radius: 3px;
-  margin-left: -6px; }
+  border-radius: 3px; }
 
 /* links widget */
 /* meta widget */
