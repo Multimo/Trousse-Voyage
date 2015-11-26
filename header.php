@@ -59,9 +59,9 @@
 
 				<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 					<div class="socialmediaMob">
-						<a href="#"><i class="fa fa-facebook-square"></i></a>
-						<a href="#"><i class="fa fa-twitter-square"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.facebook.com/troussevoyages"><i class="fa fa-facebook-square"></i></a>
+						<a href="https://twitter.com/troussevoyages"><i class="fa fa-twitter-square"></i></a>
+						<a href="https://instagram.com/troussevoyages"><i class="fa fa-instagram"></i></a>
 					</div>
 					<h1 id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 
